@@ -1,0 +1,37 @@
+class Shooter {
+  public void init() {
+    Sh.set(0);
+    Co.set(0);
+    Ag.set(0);
+    Vi.set(0);
+    Sn.set(0);
+    LFD.set(0);
+    LRD.set(0);
+    RFD.set(0);
+    RRD.set(0);
+  }
+  public void update() {
+   if (CoJ.button1) {
+      Sh.set(0.65);
+      Co.set(1);
+      Ag.set(0);
+      Vi.set(0);
+
+   } else if (CoJ.button3)
+     Sh.set(0.65);
+     Co.set(1);
+     Ag.set(0.3);
+     Vi.set(0.5);
+   } else {
+     Sh.set(0);
+     Co.set(0);
+     Ag.set(0);
+     Vi.set(0);
+   }
+   if (CoJ.button5) {
+     Sn.set(0.25);
+   } else {
+     Sn.set(0);
+   }
+
+};
